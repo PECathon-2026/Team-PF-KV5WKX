@@ -1,0 +1,8 @@
+{
+  "name": "Tsukuyomi Watch",
+  "description": "A samurai-themed celestial guide: stargazing spot finder, space event tracker, and faithful AI astrophotography restoration.",
+  "requestFramePermissions": ["geolocation"],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

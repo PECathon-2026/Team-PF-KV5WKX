@@ -1,0 +1,79 @@
+[
+  {
+    "id": "sn-1054-meigetsuki",
+    "title": "The Guest Star of 1054 CE (Crab Nebula)",
+    "japanese": "天喜二年の客星 · かに星雲 (M1)",
+    "category": "Historical Observation",
+    "era": "Heian Period · May 1054 CE",
+    "constellation": "Taurus · 牡牛座",
+    "coordinates": "RA 05h 34m 31s · Dec +22° 00′ 52″",
+    "fact": "Court poet Fujiwara no Teika chronicled the supernova SN 1054 in his diary 'Meigetsuki' (The Record of the Clear Moon), describing a 'Guest Star' (Kyakusei) in the east near Tianguan that shone as brightly as Jupiter during daylight for 23 days.",
+    "folklore": "Imperial Onmyōji (court astrologers) interpreted the sudden appearance of a blazing star near the horns of Taurus as an omen of celestial renewal. Today, its expanding remnant—the Crab Nebula (M1)—pulses with a neutron star spinning 30 times per second."
+  },
+  {
+    "id": "subaru-makura-no-soshi",
+    "title": "Subaru: The Six-Star Cluster in Heian Literature",
+    "japanese": "昴 (すばる) · プレアデス星団 (M45)",
+    "category": "Celestial Folklore",
+    "era": "Heian Period · 1002 CE",
+    "constellation": "Taurus · 牡牛座",
+    "coordinates": "RA 03h 47m 24s · Dec +24° 07′ 00″",
+    "fact": "In Clause 254 of 'The Pillow Book' (Makura no Sōshi), court lady Sei Shōnagon wrote: 'Among stars, Subaru is the most glorious, followed by Hiko-boshi (Altair) and the Morning Star (Venus).' The word 'Subaru' derives from 'sumaru'—to gather or unite as one.",
+    "folklore": "Across Edo-period agrarian calendars, when the open cluster M45 reached its zenith at dusk in late autumn, mountain sentries lit watchfires to mark the arrival of frost and the clearest winter seeing."
+  },
+  {
+    "id": "hokuto-shichisei-mizar-alcor",
+    "title": "The Samurai Archer's Test: Mizar & Alcor",
+    "japanese": "北斗七星と輔星 · ミザールとアルコル",
+    "category": "Warrior Lore & Optics",
+    "era": "Kamakura & Sengoku Periods",
+    "constellation": "Ursa Major · おおぐま座",
+    "coordinates": "RA 13h 23m 55s · Dec +54° 55′ 31″",
+    "fact": "Separated by 11.8 arcminutes, the visual double star Mizar (Zeta Ursae Majoris) and Alcor (80 Ursae Majoris) served as a naked-eye visual acuity test for night-watch archers. Modern spectroscopy reveals the pair is actually a sextuple stellar system.",
+    "folklore": "Samurai folklore knew Alcor as 'jumyō-boshi' (the Star of Lifespan) beside the handle of Hokuto Shichisei (the Northern Seven Stars). Clearly resolving the companion star before battle signified unwavering focus and a clear atmosphere."
+  },
+  {
+    "id": "amanogawa-summer-triangle",
+    "title": "The Celestial River & the Magpie Bridge",
+    "japanese": "天の川 · 織姫 (ベガ) と彦星 (アルタイル)",
+    "category": "Celestial Folklore",
+    "era": "Nara Period · Man'yōshū Anthology",
+    "constellation": "Lyra & Aquila · こと座・わし座",
+    "coordinates": "RA 18h 36m 56s · Dec +38° 47′ 01″",
+    "fact": "Vega (Alpha Lyrae, 25 light-years away) and Altair (Alpha Aquilae, 16.7 light-years away) flank the dense Cygnus Rift of the Milky Way (Amanogawa). Vega rotates so rapidly—once every 12.5 hours—that it bulges at its equator.",
+    "folklore": "Separated across the silver river of the Milky Way, the weaver princess Orihime (Vega) and the herdsman Hikoboshi (Altair) are permitted to cross a bridge of magpie wings on the seventh night of the seventh lunar month—provided the night sky remains cloudless."
+  },
+  {
+    "id": "halleys-comet-nihon-shoki",
+    "title": "The Broom Star of Emperor Tenmu (Halley's Comet)",
+    "japanese": "日本書紀の箒星 · ハレー彗星 (1P/Halley)",
+    "category": "Historical Observation",
+    "era": "Asuka Period · November 684 CE",
+    "constellation": "Virgo to Bootes · おとめ座",
+    "coordinates": "Period: 75.3 Years · Inclination 162.3°",
+    "fact": "The 'Nihon Shoki' (Chronicles of Japan) records Japan's earliest verified perihelion passage of Halley's Comet in 684 CE, describing a 'Hōkiboshi' (Broom Star) with a tail stretching over ten degrees across the northwestern sky.",
+    "folklore": "Astronomers of the Onmyōryō Bureau mapped every comet trajectory onto silk planispheres, recognizing that comet tails always point away from the Sun—centuries before solar radiation pressure was mathematically formulated."
+  },
+  {
+    "id": "tsukuyomi-harvest-moon",
+    "title": "Tsukuyomi's Mirror & the Harvest Moon",
+    "japanese": "月読命の霊鏡 · 中秋の名月",
+    "category": "Lunar Ephemeris & Myth",
+    "era": "Kojiki Chronicle · 712 CE",
+    "constellation": "Pisces / Aries Ecliptic · 黄道",
+    "coordinates": "Mean Distance: 384,400 km · Albedo 0.12",
+    "fact": "Near the autumn equinox, the angle between the Moon's orbital plane and the eastern horizon reaches its annual minimum. As a result, the full moon rises only ~20–25 minutes later each consecutive evening rather than the average 50 minutes.",
+    "folklore": "Born from the right eye of Izanagi in the Kojiki mythos, Tsukuyomi-no-Mikoto governs the lunar tides and night calendar. Aristocrats and warriors alike observed 'Tsukimi' not by gazing directly up, but by reading the Moon's reflection in still temple ponds and sake cups."
+  },
+  {
+    "id": "antares-heart-of-the-dragon",
+    "title": "Karohoshi: The Crimson Heart of the Azure Dragon",
+    "japanese": "大火 (心宿二) · アンタレス (さそり座α星)",
+    "category": "Astrophysics & Star Lore",
+    "era": "Edo Period · Star Maps of Shibukawa Harumi",
+    "constellation": "Scorpius · さそり座",
+    "coordinates": "RA 16h 29m 24s · Dec -26° 25′ 55″",
+    "fact": "Antares (Alpha Scorpii) is a red supergiant roughly 700 times the diameter of the Sun. If placed at the center of our Solar System, its outer photosphere would engulf the orbits of Mercury, Venus, Earth, and Mars.",
+    "folklore": "Known in traditional East Asian uranography as 'Daika' (The Great Fire) and the beating heart of Seiryū (the Azure Dragon of the East), its ruby scintillation near the southern summer horizon guided maritime navigators across the Seto Inland Sea."
+  }
+]

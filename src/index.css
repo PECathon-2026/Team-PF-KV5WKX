@@ -1,0 +1,278 @@
+@import "tailwindcss";
+@import "leaflet/dist/leaflet.css";
+
+@layer base {
+  :root {
+    --color-void: #0A0A0F;
+    --color-crimson: #B3202A;
+    --color-gold: #D4A84B;
+    --color-moonlight: #F4EFE3;
+    --color-indigo-dark: #0E1326;
+    --color-indigo-mid: #151B38;
+  }
+
+  body {
+    background-color: #0A0A0F;
+    color: #F4EFE3;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+  }
+}
+
+.font-serif {
+  font-family: 'Cinzel', 'Shippori Mincho', serif, Georgia;
+}
+
+.font-sans {
+  font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+.font-kanji {
+  font-family: 'Noto Serif JP', 'Shippori Mincho', serif;
+}
+
+.font-mono {
+  font-family: 'Space Mono', monospace;
+}
+
+/* Atmospheric Stargazing Glows */
+.glow-gold {
+  box-shadow: 0 0 14px rgba(212, 168, 75, 0.2);
+}
+
+.glow-gold-sm {
+  box-shadow: 0 0 14px rgba(212, 168, 75, 0.3);
+}
+
+.glow-crimson {
+  box-shadow: 0 0 14px rgba(179, 32, 42, 0.25);
+}
+
+.glow-moon {
+  box-shadow: 0 0 18px rgba(244, 239, 227, 0.15);
+}
+
+.text-glow-gold {
+  text-shadow: 0 0 14px rgba(212, 168, 75, 0.3);
+}
+
+.text-glow-moon {
+  text-shadow: none;
+}
+
+.text-glow-crimson {
+  text-shadow: 0 0 10px rgba(179, 32, 42, 0.35);
+}
+
+/* Ancient Japanese scroll parchment background */
+.parchment-pattern {
+  background-color: #121626;
+  background-image: 
+    radial-gradient(rgba(212, 168, 75, 0.08) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(10, 10, 15, 0.8), rgba(14, 19, 38, 0.9));
+  background-size: 32px 32px, 100% 100%;
+}
+
+/* Makimono Night Parchment Sheet */
+.makimono-parchment {
+  background-color: #0E1326;
+  background-image:
+    radial-gradient(rgba(212, 168, 75, 0.065) 1px, transparent 1px),
+    repeating-linear-gradient(
+      90deg,
+      rgba(212, 168, 75, 0.015) 0px,
+      rgba(212, 168, 75, 0.015) 1px,
+      transparent 1px,
+      transparent 18px
+    ),
+    linear-gradient(180deg, #11162B 0%, #0E1326 48%, #0B0F1F 100%);
+  background-size: 28px 28px, 100% 100%, 100% 100%;
+}
+
+/* Shooting star keyframe */
+@keyframes shootingStar {
+  0% {
+    transform: translateX(0) translateY(0) rotate(-45deg) scale(0);
+    opacity: 1;
+  }
+  70% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(-350px) translateY(350px) rotate(-45deg) scale(1);
+    opacity: 0;
+  }
+}
+
+.animate-shooting-star {
+  position: absolute;
+  height: 2px;
+  background: linear-gradient(-45deg, #F4EFE3, rgba(212, 168, 75, 0));
+  filter: drop-shadow(0 0 6px #F4EFE3);
+  animation: shootingStar 4s ease-in-out infinite;
+}
+
+/* Infinite Marquee */
+@keyframes marquee {
+  0% { transform: translateX(0%); }
+  100% { transform: translateX(-50%); }
+}
+
+.animate-marquee {
+  display: flex;
+  width: max-content;
+  animation: marquee 60s linear infinite;
+}
+
+.animate-marquee:hover {
+  animation-play-state: paused;
+}
+
+/* Ink Wash Loader Animation */
+@keyframes inkSpread {
+  0% { transform: scale(0.6); opacity: 0.2; }
+  50% { transform: scale(1.08); opacity: 0.9; }
+  100% { transform: scale(1); opacity: 0.7; }
+}
+
+.animate-ink-wash {
+  animation: inkSpread 2.5s ease-in-out infinite alternate;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 7px;
+}
+::-webkit-scrollbar-track {
+  background: #0A0A0F;
+}
+::-webkit-scrollbar-thumb {
+  background: #D4A84B;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #B3202A;
+}
+
+/* Parchment-style Leaflet Map Theme */
+.parchment-leaflet-map {
+  background-color: #121626 !important;
+  font-family: 'Space Mono', monospace;
+}
+
+.parchment-leaflet-map .leaflet-tile-pane {
+  filter: invert(92%) hue-rotate(180deg) sepia(55%) saturate(75%) brightness(78%) contrast(112%);
+  opacity: 0.85;
+}
+
+.parchment-leaflet-map .leaflet-control-zoom {
+  border: 1px solid rgba(212, 168, 75, 0.5) !important;
+  border-radius: 10px !important;
+  overflow: hidden;
+  box-shadow: 0 0 15px rgba(10, 10, 15, 0.8) !important;
+}
+
+.parchment-leaflet-map .leaflet-control-zoom a {
+  background-color: #0E1326 !important;
+  color: #D4A84B !important;
+  border-bottom: 1px solid rgba(212, 168, 75, 0.25) !important;
+  width: 30px !important;
+  height: 30px !important;
+  line-height: 28px !important;
+  font-family: 'Space Mono', monospace !important;
+}
+
+.parchment-leaflet-map .leaflet-control-zoom a:hover {
+  background-color: #D4A84B !important;
+  color: #0A0A0F !important;
+}
+
+.parchment-leaflet-map .leaflet-control-attribution {
+  background: rgba(10, 10, 15, 0.75) !important;
+  color: #8E9BB5 !important;
+  font-size: 9px !important;
+  border-top: 1px solid rgba(212, 168, 75, 0.2);
+  border-left: 1px solid rgba(212, 168, 75, 0.2);
+  border-top-left-radius: 6px;
+  padding: 1px 6px !important;
+}
+
+.parchment-leaflet-map .leaflet-control-attribution a {
+  color: #D4A84B !important;
+}
+
+.tsukuyomi-custom-marker {
+  background: transparent !important;
+  border: none !important;
+}
+
+/* Fade used by popovers/menus. */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-4px); }
+  to { opacity: 1; transform: none; }
+}
+.animate-in {
+  animation: fadeIn 0.18s ease-out;
+}
+
+/* Keyboard focus that is visible on the dark theme */
+:focus-visible {
+  outline: 2px solid #D4A84B;
+  outline-offset: 2px;
+}
+
+/* Calm mode (toggle in the navbar) and OS-level "reduce motion":
+   stop every decorative animation and transition. */
+:root[data-calm="true"] *,
+:root[data-calm="true"] *::before,
+:root[data-calm="true"] *::after {
+  animation: none !important;
+  scroll-behavior: auto !important;
+}
+:root[data-calm="true"] .text-glow-gold,
+:root[data-calm="true"] .text-glow-crimson,
+:root[data-calm="true"] .glow-gold,
+:root[data-calm="true"] .glow-crimson,
+:root[data-calm="true"] .glow-moon {
+  text-shadow: none;
+  box-shadow: none;
+}
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* Japanese Celestial Tarot Card Frame & Filigree */
+.tarot-card-surface {
+  background-color: #0B0F1F;
+  background-image:
+    radial-gradient(circle at 50% 0%, rgba(212, 168, 75, 0.16) 0%, transparent 65%),
+    radial-gradient(circle at 50% 100%, rgba(179, 32, 42, 0.14) 0%, transparent 65%),
+    radial-gradient(rgba(212, 168, 75, 0.07) 1px, transparent 1px),
+    linear-gradient(180deg, #121833 0%, #0B0F1F 52%, #080A14 100%);
+  background-size: 100% 100%, 100% 100%, 24px 24px, 100% 100%;
+}
+
+.tarot-card-back-surface {
+  background-color: #0A0D1A;
+  background-image:
+    radial-gradient(circle at 50% 50%, rgba(212, 168, 75, 0.18) 0%, rgba(179, 32, 42, 0.1) 45%, transparent 75%),
+    repeating-linear-gradient(
+      45deg,
+      rgba(212, 168, 75, 0.03) 0px,
+      rgba(212, 168, 75, 0.03) 1px,
+      transparent 1px,
+      transparent 14px
+    ),
+    repeating-linear-gradient(
+      -45deg,
+      rgba(212, 168, 75, 0.03) 0px,
+      rgba(212, 168, 75, 0.03) 1px,
+      transparent 1px,
+      transparent 14px
+    ),
+    linear-gradient(180deg, #141A36 0%, #0B0F1F 50%, #090B14 100%);
+}
+
